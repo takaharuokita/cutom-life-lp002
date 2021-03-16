@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+html{
+  width: 100%;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Mayryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  line-height:150%;
+  color:#303030;
+  background:#FFF;
+  box-sizing: border-box;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style:normal;
+  font-weight:normal;
+}
+li {
+  list-style:none;
+}
+caption, th {
+  text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
+sup {
+  vertical-align:text-top;
+}
+sub {
+  vertical-align:text-bottom;
+}
+form, input, textarea {
+  margin:0;
+  padding:0;
+}
+input, textarea, select {
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  *font-size:100%;
+}
+
+/* img
+--------------------------------------------------*/
+img {
+  border:0;
+  vertical-align: bottom;
+}
+
+img.img-t {
+  vertical-align: top;
+}
+
+/* font
+--------------------------------------------------*/
+a{
+  color:#0068b7;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.taC {
+  text-align: center;
+}
+
+/* clear
+--------------------------------------------------*/
+.cl{
+  clear:both;
+}
+.clx:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clx {
+  min-height: 1px;
+}
+* html .clx {
+  height: 1px;
+}
+
+/* rpst defalt-style reset
+-----------------------------------------*/
+div#container {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+html {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#lpshoppingcolumn {
+  max-width: 980px;
+}
+
+#footer {
+  box-sizing: border-box;
+}
+
+.products_dt table tr td:last-child {
+  width: 7em;
+}

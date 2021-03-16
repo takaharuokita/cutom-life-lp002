@@ -1,0 +1,913 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*******************
+ LP style
+********************/
+
+html {
+    margin: 0 auto;
+    min-width: 1280px;
+    text-align: center;
+}
+
+.hover img {
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.hover img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+}
+
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE, Edge ?? */
+    scrollbar-width: none;
+    /* Firefox ?? */
+}
+
+body::-webkit-scrollbar {
+    /* Chrome, Safari ?? */
+    display: none;
+}
+
+
+/* ovf-** 横幅の大きい画像を設定した最小幅でトリミング */
+
+.ovf-area {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ovf-box {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+/*
+.ovf-item {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1500px;
+	margin-left: -750px;
+}
+*/
+
+
+/*------------------------------------------*/
+
+
+/* KV 1枚画像(w2500)+背景1枚 */
+
+
+/*#fv {
+	text-align: center;
+	overflow: visible;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	min-width: 1280px;
+	height: 965px;
+	z-index: 1;
+	background: url(../img/fv_bg.png) repeat-x top center;
+}
+#fv h1 {
+	text-align: center;
+	display: block;
+	background: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 2500px;
+	height: 965px;
+	margin-left: -1250px;
+}*/
+
+
+/* KV 1枚画像(w2500)+背景2枚(左右) */
+
+#fv {
+    text-align: center;
+    font-size: 0;
+    line-height: 1;
+    width: 100%;
+    min-width: 1280px;
+    position: relative;
+    height: 880px;
+}
+
+#fv:before,
+#fv:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 880px;
+    width: 50%;
+    z-index: 9;
+}
+
+#fv:before {
+    left: 0;
+    /* background: url(../img/pc_kv_bgl.png) repeat-x 100% 0; */
+    background: #f2f2f2;
+}
+
+#fv:after {
+    right: 0;
+    /* background: url(../img/pc_kv_bgr.png) repeat-x 0 0; */
+    background: #fffde5;
+}
+
+#fv.yt {
+    height: 1036px;
+}
+
+#fv.yt:before,
+#fv.yt:after {
+    height: 1036px;
+}
+
+#fv.yt:before {
+    left: 0;
+    background: url(../img/yt/pc_kv_bgl.png) repeat-x 100% 0;
+}
+
+#fv.yt:after {
+    right: 0;
+    background: url(../img/yt/pc_kv_bgr.png) repeat-x 0 0;
+}
+
+#fv h1 {
+    text-align: center;
+    display: block;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1500px;
+    height: 965px;
+    margin-left: -750px;
+    z-index: 10;
+}
+
+#fv.kv02:before {
+    left: 0;
+    background: url(../../bresmile_02/img/pc_kv_bgl.png) repeat-x 100% 0;
+}
+
+#fv.kv02:after {
+    right: 0;
+    background: url(../../bresmile_02/img/pc_kv_bgr.png) repeat-x 0 0;
+}
+
+.award {
+    width: 100%;
+    margin: 40px auto 50px;
+    text-align: center;
+}
+
+.award ul {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.award li {
+    float: left;
+}
+
+.award li:first-child {
+    margin-right: 30px;
+}
+
+.award p.bnrMonomax {
+    margin: 75px 0 90px;
+}
+
+.award p.bnrMonomax+p {
+    margin-top: 0;
+}
+
+.awardWash {
+    background: url(../../brewash001_fs001/img/pc_award_bg.png);
+    padding: 90px 0 10px;
+}
+
+.cta {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    background: #fff9b5;
+}
+
+.cta .cta-box {
+    position: relative;
+    margin: 0 auto;
+}
+
+.cta .cta-teiki-1 {
+    position: relative;
+}
+
+.cta .cta-teiki-1 .cta-btn {
+    position: absolute;
+    bottom: 26px;
+    right: 211px;
+}
+
+.cta .cta-teiki-2 {
+    position: relative;
+}
+
+.cta .cta-teiki-2 .cta-btn {
+    position: absolute;
+    bottom: 0;
+    right: 211px;
+}
+
+.cta .cta-box-once {
+    margin: 50px auto;
+    width: 960px;
+}
+
+.cta .cta-box-once.once-clear {
+    margin: 0 auto;
+}
+
+.cta .cta-once {
+    width: 466px;
+    display: block;
+    position: relative;
+    margin: auto 7px;
+    float: left;
+}
+
+.cta .cta-once .cta-btn {
+    position: absolute;
+    bottom: 48px;
+    left: 21px;
+}
+
+
+/*#fv + .cta {
+  margin-top: 308px;
+}*/
+
+.develop {
+    width: 1280px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.nayami {
+    margin: 50px auto 0;
+}
+
+.course {
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*
+.siso {
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+}
+.siso .siso-box {
+	background: #deeab6 url(/upload/lp/bresmile/img/pc_siso_bg.jpg) no-repeat top center;
+}
+.siso .siso-box p {
+	width: 1280px;
+	text-align: center;
+	margin: 0 auto;
+}
+.siso .siso-ar {
+	position: relative;
+	z-index: 3;
+	text-align: center;
+}
+.siso h2 {
+	position: relative;
+	z-index: 5;
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto -25px;
+}
+.siso .siso-ar {
+	position: relative;
+	z-index: 5;
+	text-align: center;
+	width: 1000px;
+	margin: -60px auto -170px;
+}
+ */
+
+.sukkiri {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.sukkiriAr {
+    margin-top: -60px;
+    margin-bottom: -170px;
+    position: relative;
+    z-index: 5;
+}
+
+.btn-area {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sukkiri+.btn-area {
+    margin-top: -60px;
+}
+
+.secret h2 {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin: 70px auto 75px;
+    background: #f2f2f2;
+}
+
+.secret .secret-box {
+    background-color: #f5f5f5;
+}
+
+.voice h2 {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.voice .voice-box {
+    background-color: #fff;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.joint {
+    position: relative;
+    text-align: center;
+    width: 1280px;
+    margin: 100px auto 50px;
+}
+
+.everyday {
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto 50px;
+}
+
+.everyday .ovf-box {
+    z-index: 3;
+}
+
+.everyday:before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.everyday:after {
+    content: "";
+    width: 100%;
+    height: 29px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.teiki {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delivery {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.payment {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.callcenter {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sta {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products {
+    width: 1100px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.products .products-table {
+    width: 940px;
+    margin: 10px auto;
+    border: 3px solid #989898;
+    background-color: #ffffff;
+}
+
+.products th {
+    border-bottom: 1px solid #cccccc;
+    background-color: #f2f2f2;
+    width: 208px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2d2d2d;
+    text-align: center;
+    line-height: 1.2em;
+    padding: .8em 0;
+}
+
+.products td {
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    padding: .8em 1.2em;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.products td strong {
+    font-weight: bold;
+    display: block;
+}
+
+.products tr:last-child th,
+.products tr:last-child th {
+    border-bottom: none;
+}
+
+
+/*橋本先生*/
+
+.dentist {
+    font-size: 0;
+    padding: 60px 0 0;
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.dentist img {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 1500px;
+    margin-left: -750px;
+    max-width: 1500px;
+}
+
+
+/****************************
+		ブレスマイルクリア 
+****************************/
+
+.clearWrap {
+    background: url(../img/pc_clear_bg.png) repeat left center;
+    margin-top: 100px;
+    padding-bottom: 105px;
+}
+
+.breClear {
+    overflow: visible!important;
+    margin-bottom: 70px;
+}
+
+.breClear div h2 {
+    margin: -60px 0 70px;
+}
+
+.cta .cta-clear-1 .cta-btn {
+    position: absolute;
+    bottom: 55px;
+    right: 211px;
+}
+
+.cta .cta-clear-smile,
+.cta .cta-clear-w-smile {
+    position: relative;
+}
+
+.cta .cta-clear-smile .cta-btn {
+    position: absolute;
+    bottom: 28px;
+    right: 211px;
+}
+
+.cta .cta-clear-w-smile .cta-btn {
+    position: absolute;
+    bottom: 70px;
+    right: 211px;
+}
+
+
+/* YouTube */
+
+.cta .cta-clear-smile.yt .cta-btn {
+    right: 202px;
+}
+
+.cta .cta-clear-w-smile.yt .cta-btn {
+    right: 202px;
+}
+
+
+/****************************
+		さくらんぼ 
+****************************/
+
+.cherry {
+    padding: 50px 0;
+}
+
+.cta.ctaCherry {
+    margin-top: 20px;
+}
+
+.cta.ctaCherry .cta-teiki-1 .cta-btn {
+    bottom: 30px;
+}
+
+.cta.ctaCherry .cta-teiki-2 .cta-btn {
+    bottom: 30px;
+}
+
+.cta.ctaCherry .cta-box-once {
+    position: relative;
+    margin: 30px auto;
+}
+
+.cta.ctaCherry .cta-box-once:before {
+    content: '';
+    background: #ffebef;
+    position: absolute;
+    width: 1000px;
+    height: 256px;
+    left: -20px;
+    top: -30px;
+}
+
+
+/****************************
+		フローティングバナー 
+****************************/
+
+.floatingTelBnr {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0;
+    line-height: 1;
+    text-align: center;
+    z-index: 99999;
+}
+
+.floatingTelBnr:before {
+    content: '';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #4eaa25;
+}
+
+.floatingTelBnr.dn {
+    display: none;
+}
+
+.floatingTelBnr img {
+    height: auto;
+    position: relative;
+}
+
+
+/*#containerにjsでfloatingBnrTrueをaddClass*/
+
+#container.floatingBnrTrue+#lp-footer {
+    padding-bottom: 100px;
+}
+
+
+/*歯ブラシ*/
+
+.teethbrash {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* question */
+
+#question001 .question001-title,
+#question002 .question002-title,
+#question003 .question003-title,
+#question004 .question004-title {
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    width: 1070px;
+    height: 71px;
+    position: relative;
+    z-index: 11;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s all;
+    margin: 0 auto 30px;
+}
+
+#question001 .question001-title:before,
+#question002 .question002-title:before,
+#question003 .question003-title:before,
+#question004 .question004-title:before {
+    content: '';
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 40px;
+    height: 41px;
+    /*background: #0b3181;*/
+    border-radius: 5px;
+    border: #0b3181 2px solid;
+    right: 20px;
+    top: 50%;
+    margin-top: -21px;
+}
+
+#question001 .question001-title:after,
+#question002 .question002-title:after,
+#question003 .question003-title:after,
+#question004 .question004-title:after {
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: #0b3181 transparent transparent transparent;
+    transition: .1s all;
+}
+
+#question001 .question001-title:hover,
+#question002 .question002-title:hover,
+#question003 .question003-title:hover,
+#question004 .question004-title:hover {
+    background: rgba(0, 0, 0, .04);
+}
+
+#question001 .infoArea,
+#question002 .infoArea,
+#question003 .infoArea,
+#question004 .infoArea {
+    display: none;
+}
+
+#question001,
+#question002,
+#question003,
+#question004 {
+    min-width: 1000px;
+    margin: 50px auto 0;
+    text-align: left;
+}
+
+#question001 .infoArea,
+#question002 .infoArea,
+#question003 .infoArea,
+#question004 .infoArea {
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto 60px;
+}
+
+#question001 .infoBox,
+#question002 .infoBox,
+#question003 .infoBox,
+#question004 .infoBox {
+    width: 470px;
+    float: left;
+}
+
+#question001 .infoBox:nth-child(even),
+#question002 .infoBox:nth-child(even),
+#question003 .infoBox:nth-child(even),
+#question004 .infoBox:nth-child(even) {
+    float: right;
+}
+
+#question001 .infoSttl,
+#question002 .infoSttl,
+#question003 .infoSttl,
+#question004 .infoSttl {
+    background-color: #0b3181;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 8px 12px 6px;
+}
+
+#question001 dd,
+#question002 dd,
+#question003 dd,
+#question004 dd {
+    margin-bottom: 30px;
+}
+
+#question001 dd p,
+#question002 dd p,
+#question003 dd p,
+#question004 dd p {
+    font-size: 14px;
+    line-height: 1.65em;
+    font-feature-settings: 'palt';
+    letter-spacing: -0.04em;
+}
+
+#question001 dd p+p,
+#question002 dd p+p,
+#question003 dd p+p,
+#question004 dd p+p {
+    margin-top: 30px;
+}
+
+#question001 .infoSsttl,
+#question002 .infoSsttl,
+#question003 .infoSsttl,
+#question004 .infoSsttl {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b3181;
+    display: block;
+    margin-bottom: .5em;
+}
+
+#question001 .infoImg,
+#question002 .infoImg,
+#question003 .infoImg,
+#question004 .infoImg {
+    margin-top: 14px;
+    display: block;
+}
+
+#question001 .infoSsl,
+#question002 .infoSsl,
+#question003 .infoSsl,
+#question004 .infoSsl {
+    display: table;
+    margin-top: 8px;
+}
+
+#question001 .infoSslImg,
+#question002 .infoSslImg,
+#question003 .infoSslImg,
+#question004 .infoSslImg {
+    display: table-cell;
+}
+
+#question001 .infoSslTxt,
+#question002 .infoSslTxt,
+#question003 .infoSslTxt,
+#question004 .infoSslTxt {
+    display: table-cell;
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 1.65em;
+    padding: 0 0 0 8px;
+}
+
+#question001 .infoBox a,
+#question002 .infoBox a,
+#question003 .infoBox a,
+#question004 .infoBox a {
+    color: #2452b9;
+    text-decoration: underline;
+    font-size: inherit;
+}
+
+#question001 .infoBg,
+#question002 .infoBg,
+#question003 .infoBg,
+#question004 .infoBg {
+    margin-top: 100px;
+    background: #000000;
+    color: #e9e9e9;
+}
+
+#question001 .infoLink,
+#question002 .infoLink,
+#question003 .infoLink,
+#question004 .infoLink {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#question001 .footerBottom,
+#question002 .footerBottom,
+#question003 .footerBottom,
+#question004 .footerBottom {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#question001 .infoCompany,
+#question002 .infoCompany,
+#question003 .infoCompany,
+#question004 .infoCompany {
+    height: 59px;
+    font-size: 14px;
+    line-height: 1.6em;
+    background: url(../../../../upload/save_image/logo/logo_footer.png) no-repeat;
+    background-position: 0 50%;
+    padding: 11px 0 0 264px;
+    width: 770px;
+    display: block;
+    box-sizing: border-box;
+}
+
+#question001 .infoCompany a,
+#question002 .infoCompany a,
+#question003 .infoCompany a,
+#question004 .infoCompany a {
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+#question001 .infoCompany a:hover,
+#question002 .infoCompany a:hover,
+#question003 .infoCompany a:hover,
+#question004 .infoCompany a:hover {
+    text-decoration: underline;
+}
