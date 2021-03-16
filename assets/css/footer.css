@@ -151,7 +151,7 @@
 }
 
 #lpFooter .infoBox {
-    width: 470px;
+    width: 94%;
     float: left;
 }
 
@@ -210,8 +210,8 @@
 
 #lpFooter .infoSslTxt {
     display: table-cell;
-    font-size: 14px;
-    vertical-align: top;
+    font-size: 33px;
+    vertical-align: middle;
     line-height: 1.65em;
     padding: 0 0 0 8px;
 }
@@ -231,7 +231,7 @@
 #lpFooter .infoLink {
     width: 100%;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: -90px auto 10px;
 }
 
 .footerLink {
@@ -307,7 +307,7 @@
 #lpFooter .infoTtl {
     border: 2px solid #aaa;
     border-radius: 5px;
-    width: 1070px;
+    width: 960px;
     height: 71px;
     position: relative;
     z-index: 11;
@@ -321,7 +321,7 @@
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     cursor: pointer;
     transition: .2s all;
     margin: 0 auto 30px;
@@ -337,7 +337,7 @@
     height: 41px;
     /*background: #0b3181;*/
     border-radius: 5px;
-    border: #0b3181 2px solid;
+    border: #777777 2px solid;
     right: 20px;
     top: 50%;
     margin-top: -21px;
@@ -353,7 +353,7 @@
     height: 0;
     border-style: solid;
     border-width: 15px 10px 0 10px;
-    border-color: #0b3181 transparent transparent transparent;
+    border-color: #777777 transparent transparent transparent;
     transition: .1s all;
 }
 
