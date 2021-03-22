@@ -111,8 +111,9 @@
         height: 200px;
     }
     .q-h1 {
-        font-size: 56px;
-        padding: 5px 0 0 44px;
+        font-size: 52px;
+        padding: 6px 0 0 25px;
+        letter-spacing: -2px;
     }
     #question001 .infoSslTxt,
     #question002 .infoSslTxt,
