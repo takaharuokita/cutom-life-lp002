@@ -71,36 +71,12 @@ body::-webkit-scrollbar {
 
 /*------------------------------------------*/
 
-
-/* KV 1枚画像(w2500)+背景1枚 */
-
-
-/*#fv {
-	text-align: center;
-	overflow: visible;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	min-width: 1280px;
-	height: 965px;
-	z-index: 1;
-	background: url(../img/fv_bg.png) repeat-x top center;
+.bnrOOS {
+    text-align: center;
+    font-size: 0;
+    background: url(../../img/title001.png) no-repeat center/contain;
+    height: 300px;
 }
-#fv h1 {
-	text-align: center;
-	display: block;
-	background: none;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 2500px;
-	height: 965px;
-	margin-left: -1250px;
-}*/
-
-
-/* KV 1枚画像(w2500)+背景2枚(左右) */
 
 #fv {
     text-align: center;
@@ -165,6 +141,7 @@ body::-webkit-scrollbar {
     height: 965px;
     margin-left: -750px;
     z-index: 10;
+    background: url(../../img/main-image.png) no-repeat top 6px center/contain;
 }
 
 #fv.kv02:before {

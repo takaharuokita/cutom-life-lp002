@@ -1,0 +1,46 @@
+@media screen and (max-width:980px) {
+    .mainHeader .headerL h1 img {
+        width: 700px!important;
+        height: auto;
+        margin: 35px 0 10px;
+    }
+    .mainHeader {
+        height: 400px!important;
+        margin: 0 auto!important;
+        flex-direction: column!important;
+    }
+    .mainHeader .headerR .headerR_00>div p small,
+    .mainHeader .headerR .headerR_01>div p small {
+        font-size: 40px!important;
+    }
+    .mainHeader .headerR .headerR_00>div p span,
+    .mainHeader .headerR .headerR_01>div p span {
+        font-size: 48px!important;
+    }
+    .mainHeader .headerR .headerR_03 .btnMypage {
+        font-size: 50px!important;
+    }
+    .mainHeader .headerR {
+        margin-bottom: 30px;
+    }
+    .popupModal1>input:nth-child(1)+label {
+        font-size: 48px!important;
+    }
+    .bnrOOS {
+        text-align: center;
+        font-size: 0;
+        height: 530px!important;
+        background: url(../../img/title001_sp.png)no-repeat center/contain!important;
+    }
+    #fv {
+        height: 1400px!important;
+    }
+    #fv h1 {
+        background: url(../../img/main-image_sp.png) no-repeat center/contain!important;
+        height: 1400px!important;
+    }
+    #fv:before,
+    #fv:after {
+        height: 1400px!important;
+    }
+}
