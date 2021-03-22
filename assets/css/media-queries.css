@@ -1,46 +1,117 @@
 @media screen and (max-width:980px) {
     .mainHeader .headerL h1 img {
-        width: 700px!important;
+        width: 700px;
         height: auto;
         margin: 35px 0 10px;
     }
     .mainHeader {
-        height: 400px!important;
-        margin: 0 auto!important;
-        flex-direction: column!important;
+        height: 400px;
+        margin: 0 auto;
+        flex-direction: column;
     }
     .mainHeader .headerR .headerR_00>div p small,
     .mainHeader .headerR .headerR_01>div p small {
-        font-size: 40px!important;
+        font-size: 40px;
     }
     .mainHeader .headerR .headerR_00>div p span,
     .mainHeader .headerR .headerR_01>div p span {
-        font-size: 48px!important;
+        font-size: 48px;
     }
     .mainHeader .headerR .headerR_03 .btnMypage {
-        font-size: 50px!important;
+        font-size: 50px;
     }
     .mainHeader .headerR {
         margin-bottom: 30px;
     }
     .popupModal1>input:nth-child(1)+label {
-        font-size: 48px!important;
+        font-size: 48px;
     }
     .bnrOOS {
         text-align: center;
         font-size: 0;
-        height: 530px!important;
-        background: url(../../img/title001_sp.png)no-repeat center/contain!important;
+        height: 530px;
+        background: url(../../img/title001_sp.png)no-repeat center/contain;
     }
     #fv {
-        height: 1400px!important;
+        height: 1400px;
     }
     #fv h1 {
-        background: url(../../img/main-image_sp.png) no-repeat center/contain!important;
-        height: 1400px!important;
+        background: url(../../img/main-image_sp.png) no-repeat center/contain;
+        height: 1400px;
     }
     #fv:before,
     #fv:after {
-        height: 1400px!important;
+        height: 1400px;
+    }
+    .award {
+        height: 950px;
+        background: url(../../img/title002_sp.png)no-repeat center center/contain;
+    }
+    .cta .cta-once {
+        width: 866px;
+        margin: 20px auto;
+    }
+    .cta .cta-once .cta-btn {
+        position: absolute;
+        bottom: 178px;
+        left: 55px;
+    }
+    .teiki {
+        background: url(../../img/main-image002_001.png)no-repeat center center/contain;
+    }
+    .teiki2 {
+        display: block;
+    }
+    .teiki3 {
+        display: block;
+    }
+    .ovf-box002 {
+        display: block;
+        position: relative;
+        top: -5px;
+        left: 0;
+        height: 500px;
+        text-align: center;
+        background: url(../../img/main-image003_001.png)no-repeat center center/contain;
+    }
+    .ovf-box003 {
+        display: block;
+    }
+    .products .products-table {
+        width: 1000px;
+        margin-bottom: 80px;
+    }
+    .products th {
+        width: 308px;
+        font-size: 38px;
+    }
+    .products td {
+        font-size: 33px;
+    }
+    .footerLink {
+        line-height: 1.2;
+        padding: 40px 0;
+    }
+    .footerLink li a {
+        font-size: 36px;
+    }
+    .footerLink li:after {
+        font-size: 36px;
+    }
+    #lpFooter .infoCompany {
+        font-size: 29px;
+        padding: 0px 0 0 40px;
+        width: 930px;
+    }
+    #copy {
+        color: #a0a0a0;
+        text-align: center;
+        width: 100%;
+        padding: 70px 0 50px;
+        font-size: 30px;
+    }
+    .infoJadma img {
+        width: 80vw;
+        transform: translateY(25px);
     }
 }
