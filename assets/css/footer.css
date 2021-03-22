@@ -174,7 +174,7 @@
 }
 
 #lpFooter dd p {
-    font-size: 14px;
+    font-size: 27px;
     line-height: 1.65em;
     font-feature-settings: 'palt';
     letter-spacing: -0.04em;
@@ -308,7 +308,7 @@
     border: 2px solid #aaa;
     border-radius: 5px;
     width: 960px;
-    height: 71px;
+    height: 120px;
     position: relative;
     z-index: 11;
     -webkit-box-sizing: border-box;

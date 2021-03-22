@@ -24,7 +24,7 @@
         margin-bottom: 30px;
     }
     .popupModal1>input:nth-child(1)+label {
-        font-size: 48px;
+        font-size: 48px!important;
     }
     .bnrOOS {
         text-align: center;
@@ -55,6 +55,11 @@
         position: absolute;
         bottom: 178px;
         left: 55px;
+    }
+    #cta-in::before {
+        width: 180px;
+        height: 180px;
+        right: -60px;
     }
     .teiki {
         background: url(../../img/main-image002_001.png)no-repeat center center/contain;
@@ -97,6 +102,33 @@
     }
     .footerLink li:after {
         font-size: 36px;
+    }
+    #question001 .question001-title,
+    #question002 .question002-title,
+    #question003 .question003-title,
+    #question004 .question004-title,
+    #lpFooter .infoTtl {
+        height: 200px;
+    }
+    .q-h1 {
+        font-size: 56px;
+        padding: 5px 0 0 44px;
+    }
+    #question001 .infoSslTxt,
+    #question002 .infoSslTxt,
+    #question003 .infoSslTxt,
+    #question004 .infoSslTxt {
+        padding: 0 0 0 55px;
+    }
+    #question001 dd p,
+    #question002 dd p,
+    #question003 dd p,
+    #question004 dd p,
+    #lpFooter dd p {
+        font-size: 31px;
+        line-height: 2.65em;
+        font-feature-settings: 'palt';
+        letter-spacing: -0.04em;
     }
     #lpFooter .infoCompany {
         font-size: 29px;
