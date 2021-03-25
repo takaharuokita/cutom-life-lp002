@@ -999,3 +999,25 @@ body::-webkit-scrollbar {
 .infoJadma img {
     width: 20vw;
 }
+
+.pekopeko {
+    animation: pekopeko 2s infinite;
+}
+
+@keyframes pekopeko {
+    0% {
+        transform: scale(1.08);
+    }
+    10% {
+        transform: scale(0.95);
+    }
+    20% {
+        transform: scale(1.05);
+    }
+    30% {
+        transform: scale(0.95);
+    }
+    40% {
+        transform: scale(1.0);
+    }
+}
