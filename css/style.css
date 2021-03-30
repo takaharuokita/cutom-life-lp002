@@ -1,0 +1,720 @@
+/* 
+初期設定 
+*/
+
+html,
+body,
+main,
+section,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+*,
+ :after,
+ :before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*  --------------------------------
+
+1-1.初期設定（タグ）
+
+---------------------------------- */
+
+html {
+    font-size: 1.05vw;
+    /* 可変対応14px */
+    font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    scroll-behavior: smooth;
+    /* スクロールをスムーズに */
+}
+
+body {
+    overflow-x: hidden;
+    /* サイドバー非表示 */
+    -ms-overflow-style: none;
+    /* IE, Edge 対応 */
+    scrollbar-width: none;
+    /* Firefox 対応 */
+}
+
+body::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display: none;
+}
+
+
+/* __________見出し__________ */
+
+h1 {
+    font-size: 4.5vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+h3 {
+    font-size: 2.8vw;
+}
+
+h4 {
+    font-size: 2.3vw;
+}
+
+h5 {
+    font-size: 1.8vw;
+}
+
+h6 {
+    font-size: 1.3vw;
+}
+
+
+/* __________テーブル__________ */
+
+table {
+    border-collapse: collapse;
+    /* ボーダー線は重ねる */
+    table-layout: fixed;
+    /* 列幅を固定レイアウトにする */
+}
+
+
+/* ___________リンク__________ */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ヘッダーコンテンツ */
+
+header {
+    height: 80px;
+    box-shadow: 1px 1px 4px 0px #dcdcdc;
+    position: fixed;
+    width: 100vw;
+    background: white;
+}
+
+header>section {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div:nth-child(1) {
+    width: 60%;
+}
+
+header div:nth-child(1) img {
+    padding-top: 10px;
+    height: 70px;
+}
+
+header div:nth-child(2) {
+    width: 30%;
+}
+
+header div:nth-child(2)>p:nth-child(1) {
+    padding: 10px 0;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+header div:nth-child(3) {
+    width: 10%;
+}
+
+header div:nth-child(3) img {
+    height: 80px;
+}
+
+header div:nth-child(3) img:hover {
+    opacity: 0.8;
+}
+
+
+/* ------------------
+
+メインコンテンツ 
+
+---------------------*/
+
+.main-content {
+    padding-top: 80px;
+}
+
+
+/* -------------------
+
+コンテンツ001 
+
+----------------------*/
+
+.section001>div:nth-child(1) {
+    background: url(../img/img1920.jpg) no-repeat center/cover;
+    height: 500px;
+}
+
+.sec001-content {
+    padding: 5% 15%;
+}
+
+.section001>div:nth-child(1)>.sec001-content>p {
+    background: white;
+    border: solid 2px black;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+/* -----------------------
+
+タイトルコンテンツ001 
+
+--------------------------*/
+
+.title-content001 {
+    width: 100%;
+    background: rgb(255 216 27);
+}
+
+.title-content001>div:nth-child(1) {
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.title-content001>div:nth-child(1)>h1 {
+    font-size: 37px;
+    letter-spacing: 1px;
+}
+
+.title-content001>div:nth-child(1)>h1 b {
+    font-size: 44px;
+    letter-spacing: 1px;
+    background: linear-gradient(transparent 80%, #ff4800 0%);
+}
+
+
+/* ------------------
+
+コンテンツ002
+
+---------------------*/
+
+.section002>div:nth-child(1) {
+    height: 500px;
+}
+
+.sec002-content {
+    padding: 5% 15%;
+}
+
+.sec002-content>.content-3column {
+    width: 100%;
+    background: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+.section002::after {
+    content: "";
+    border-color: #d9534f;
+    border-style: solid;
+    border-width: 65px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    left: 46.5%;
+    transform: scaleX(2);
+}
+
+
+/* ------------コンテンツ001__1カラム目 */
+
+.content-3column>div:nth-child(1) {
+    width: 40%;
+    background: red;
+    margin-right: 2%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.content-3column>div:nth-child(1)>div>img {
+    width: 100%;
+    padding: 5%;
+}
+
+.content-3column>div:nth-child(1) .in-contena {
+    background: coral;
+    height: 100px;
+}
+
+
+/* ------------コンテンツ001__2カラム目 */
+
+.content-3column>div:nth-child(2) {
+    width: 40%;
+    background: beige;
+    margin-right: 2%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.content-3column>div:nth-child(2)>div>img {
+    width: 100%;
+    padding: 5%;
+}
+
+.content-3column>div:nth-child(2) .in-contena {
+    background: red;
+    height: 100px;
+}
+
+
+/* ------------コンテンツ001__1カラム目 */
+
+.content-3column>div:nth-child(3) {
+    width: 40%;
+    background: gainsboro;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.content-3column>div:nth-child(3)>div>img {
+    width: 100%;
+    padding: 5%;
+}
+
+.content-3column>div:nth-child(3) .in-contena {
+    background: bisque;
+    height: 100px;
+}
+
+
+/* -----------------------
+
+タイトルコンテンツ002
+
+--------------------------*/
+
+.title-content002 {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.title-content002>div:nth-child(1) {
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.title-content002>div:nth-child(1)>h1 {
+    font-size: 37px;
+    letter-spacing: 1px;
+}
+
+.title-content002>div:nth-child(1)>h1 b {
+    font-size: 44px;
+    letter-spacing: 1px;
+    background: linear-gradient(transparent 80%, #ff4800 0%);
+}
+
+
+/* ------------------
+
+コンテンツ003
+
+---------------------*/
+
+.section003>div:nth-child(1) {
+    height: 500px;
+}
+
+.sec003-content {
+    padding: 5% 15%;
+}
+
+.sec003-content>.content-2column {
+    width: 100%;
+    background: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* 
+.section002::after {
+    content: "";
+    border-color: #d9534f;
+    border-style: solid;
+    border-width: 65px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    left: 46.5%;
+    transform: scaleX(2);
+} */
+
+
+/* ------------コンテンツ001__1カラム目 */
+
+.content-2column>div:nth-child(1) {
+    width: 50%;
+    background: red;
+    margin-right: 2%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.content-2column>div:nth-child(1)>div>img {
+    width: 100%;
+    padding: 5%;
+}
+
+.content-2column>div:nth-child(1) .in-contena {
+    background: coral;
+    height: 100px;
+}
+
+
+/* ------------コンテンツ001__2カラム目 */
+
+.content-2column>div:nth-child(2) {
+    width: 50%;
+    background: beige;
+    margin-right: 2%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.content-2column>div:nth-child(2)>div>img {
+    width: 100%;
+    padding: 5%;
+}
+
+.content-2column>div:nth-child(2) .in-contena {
+    background: red;
+    height: 100px;
+}
+
+
+/* -----------------------
+
+タイトルコンテンツ003
+
+--------------------------*/
+
+.title-content003 {
+    margin-top: 5%;
+    width: 100%;
+    background: rgb(255 216 27);
+}
+
+.title-content003>div:nth-child(1) {
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.title-content003>div:nth-child(1)>h1 {
+    font-size: 37px;
+    letter-spacing: 1px;
+}
+
+.title-content003>div:nth-child(1)>h1 b {
+    font-size: 44px;
+    letter-spacing: 1px;
+    background: linear-gradient(transparent 80%, #ff4800 0%);
+}
+
+.title-content003>div:nth-child(2) {
+    padding: 3% 10%;
+    text-align: center;
+}
+
+
+/* ------------------
+
+コンテンツ004
+
+---------------------*/
+
+.section004>div:nth-child(1) {
+    height: 500px;
+}
+
+.sec004-content {
+    padding: 1% 10% 5%;
+}
+
+.sec004-content>.content-1column {
+    width: 100%;
+    background: white;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+/* 
+.section002::after {
+    content: "";
+    border-color: #d9534f;
+    border-style: solid;
+    border-width: 65px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    left: 46.5%;
+    transform: scaleX(2);
+} */
+
+
+/* ------------コンテンツ001__1カラム目 */
+
+.content-1column>div:nth-child(1) {
+    width: 80%;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.content-1column>div:nth-child(1)>div>img {
+    width: 100%;
+    padding: 5%;
+}
+
+
+/* --------------
+1個目
+------------IN TEXT 装飾 */
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena {
+    background: coral;
+    border: solid 5px blanchedalmond;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena p {
+    padding-top: 3%;
+    padding-left: 18%;
+    position: relative;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena p::before {
+    content: "";
+    width: 280px;
+    height: 120px;
+    background: url(../img/img1920.jpg) no-repeat center/contain;
+    position: absolute;
+    top: 15px;
+    left: -115px;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena h2 {
+    padding-left: 18%;
+}
+
+
+/* ---------------IN TEXT リスト装飾 */
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena ul li:nth-child(1) {
+    background: blue;
+    color: white;
+    padding: 1%;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(2).in-contena ul li:nth-child(2) {
+    border: solid 2px red;
+    padding: 1%;
+}
+
+
+/* --------------
+2個目
+------------IN TEXT 装飾 */
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena {
+    margin-top: 5%;
+    background: rgb(233, 142, 109);
+    border: solid 5px blanchedalmond;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena p {
+    padding-top: 3%;
+    padding-left: 18%;
+    position: relative;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena p::before {
+    content: "";
+    width: 280px;
+    height: 120px;
+    background: url(../img/img1920.jpg) no-repeat center/contain;
+    position: absolute;
+    top: 15px;
+    left: -115px;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena h2 {
+    padding-left: 18%;
+}
+
+
+/* ---------------IN TEXT リスト装飾 */
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena ul li:nth-child(1) {
+    background: rgb(144, 144, 212);
+    color: white;
+    padding: 1%;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(3).in-contena ul li:nth-child(2) {
+    border: solid 2px red;
+    padding: 1%;
+}
+
+
+/* --------------
+3個目
+------------IN TEXT 装飾 */
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena {
+    margin-top: 5%;
+    background: rgb(233, 142, 109);
+    border: solid 5px blanchedalmond;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena p {
+    padding-top: 3%;
+    padding-left: 18%;
+    position: relative;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena p::before {
+    content: "";
+    width: 280px;
+    height: 120px;
+    background: url(../img/img1920.jpg) no-repeat center/contain;
+    position: absolute;
+    top: 15px;
+    left: -115px;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena h2 {
+    padding-left: 18%;
+}
+
+
+/* ---------------IN TEXT リスト装飾 */
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena ul li:nth-child(1) {
+    background: rgb(144, 144, 212);
+    color: white;
+    padding: 1%;
+}
+
+.content-1column>div:nth-child(1)>div:nth-child(4).in-contena ul li:nth-child(2) {
+    border: solid 2px red;
+    padding: 1%;
+}
